@@ -11,6 +11,13 @@ export async function list(filter, type) {
   });
 }
 
+export async function listSup() {
+  const dataPrevius = JSON.parse(await fs.readFile(path, 'utf-8'));
+  return dataPrevius
+    .filter((data) => data.suport)
+    .map((data) => data._serialized);
+}
+
 export async function save(data) {
   const dataPrevius = JSON.parse(await fs.readFile(path, 'utf-8'));
   dataPrevius.push(data)
