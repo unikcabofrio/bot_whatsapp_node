@@ -43,7 +43,7 @@ node_modules/
 jspm_packages/
 .wwebjs_cache/
 .wwebjs_auth/
-/src/json/dbClients.json
+src/json/dbClients.json
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
